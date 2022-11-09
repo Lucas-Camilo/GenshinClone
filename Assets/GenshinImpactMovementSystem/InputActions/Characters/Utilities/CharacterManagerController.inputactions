@@ -1,0 +1,67 @@
+{
+    "name": "CharacterManagerController",
+    "maps": [
+        {
+            "name": "SetCharacter",
+            "id": "cdef8b5d-100b-4d30-a1c3-20e43f87eb67",
+            "actions": [
+                {
+                    "name": "Teclas",
+                    "type": "Button",
+                    "id": "bd09aa51-fda7-47b9-a780-30d47017974c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "23cef96e-c780-405f-b4ed-84880a9fc170",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teclas",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8926e907-2c5c-4573-8df3-77962b46b639",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teclas",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d6afffaf-8b62-4663-950b-efcf1185e9e6",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teclas",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b1fbfc68-331a-4425-a455-5a07839162b8",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teclas",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

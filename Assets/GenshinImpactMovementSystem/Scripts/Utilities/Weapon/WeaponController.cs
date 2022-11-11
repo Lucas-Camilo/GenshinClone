@@ -23,9 +23,9 @@ namespace GenshinImpactMovementSystem
         // Start is called before the first frame update
         void Start()
         {
-            InstanciateSword = Instantiate(currentWeapond, new Vector3(0,0,0), Quaternion.identity);
+            InstanciateSword = Instantiate(currentWeapond, Vector3.zero, Quaternion.identity) as GameObject;
             InstanciateSword.transform.parent = weaponLocaleIdle.transform;
-            InstanciateSword.transform.transform.position = new Vector3(0, 0, 0);
+            InstanciateSword.transform.position = Vector3.zero;
             
             PlayerScript = GetComponent<Player>();
         }
@@ -33,14 +33,28 @@ namespace GenshinImpactMovementSystem
         // Update is called once per frame
         void Update()
         {
-            SetIdleState();
+            if(PlayerScript.Animator.GetBool("isIdling"))
+            {
+                SetIdleState();
+            }
+            if(PlayerScript.Animator.GetBool("isAtacking"))
+            {
+                SetAtackState();
+            }
         }
 
         public void SetIdleState()
         {
             InstanciateSword.transform.parent = weaponLocaleIdle.transform;
-            //InstanciateSword.transform.transform.position = InIdlePosition;
-            InstanciateSword.transform.rotation = InIdleRotation;
+            InstanciateSword.transform.position = weaponLocaleIdle.transform.position;
+            InstanciateSword.transform.rotation = weaponLocaleIdle.transform.rotation;
+        }
+
+        public void SetAtackState()
+        {
+            InstanciateSword.transform.parent = weaponLocaleAtacking.transform;
+            InstanciateSword.transform.position = weaponLocaleAtacking.transform.position;
+            InstanciateSword.transform.rotation = weaponLocaleAtacking.transform.rotation;
         }
     }
 }

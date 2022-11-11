@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &217908213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 217908214}
+  m_Layer: 0
+  m_Name: Weapon Locale Idle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &217908214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217908213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.017, y: 1.511, z: -0.246}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8481857349290850486}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8232339529025989291
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,10 +183,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d455eb4ed9b03478cd771750f50784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rend: {fileID: 0}
-  inIdleAnimation: 1
-  timeAlive: 0
-  Player: {fileID: 0}
+  currentWeapond: {fileID: 4576310514743418766, guid: 848790800e99bcb489371ec043fe486a, type: 3}
+  weaponLocaleAtacking: {fileID: 8387268484120648647}
+  weaponLocaleIdle: {fileID: 217908213}
+  InAtackPosition: {x: 0, y: 0, z: 0}
+  InAtackRotation: {x: 0, y: 0, z: 0}
+  InIdlePosition: {x: -2.02, y: 1.27, z: -0.49}
+  InIdleRotation: {x: 0, y: 0, z: 0.3420202, w: -0.9396926}
 --- !u!1 &8232339529101845566
 GameObject:
   m_ObjectHideFlags: 0
